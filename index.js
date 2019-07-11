@@ -71,18 +71,18 @@ String.prototype.evenCaps = function() {
    * Uppercase every even character not including white space.
    */
   let counter = 0;
-  output_word = [];
+  outputWord = [];
 
-  for (char of this.split()) {
+  for (char of this.split("")) {
     if (char !== " ") {
       char = counter % 2 == 0 ? char.toUpperCase() : char;
       counter += 1;
     }
 
-    output_word.push(char);
+    outputWord.push(char);
   }
 
-  return output_word.join("");
+  return outputWord.join("");
 };
 
 String.prototype.removeExtraWhiteSpace = function() {

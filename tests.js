@@ -46,4 +46,13 @@ describe("Extending the String type functionality", () => {
     assert.equal("aStRoWoRl      D", "astroworl      d".oddCaps());
     assert.equal("wOoOoOoSh", "woooooosh".oddCaps());
   });
+
+  it("should capitalize every even character", () => {
+    assert.equal("AbCdEfGh", "abcdefgh".evenCaps());
+    assert.equal("A     bCdEfGh", "A     bCdEfGh".evenCaps());
+    assert.equal(
+      "H     e   L     l         O",
+      "h     e   l     l         o".evenCaps()
+    );
+  });
 });
