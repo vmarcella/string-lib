@@ -103,7 +103,7 @@ String.prototype.kabobCase = function() {
    */
   const trimmedStr = this.removeExtraWhiteSpace();
   const pattern = /\s/g;
-  const newStr = this.replace(trimmedStr, "-");
+  const newStr = trimmedStr.replace(pattern, "-");
   return newStr;
 };
 

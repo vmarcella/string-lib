@@ -74,4 +74,17 @@ describe("Extending the String type functionality", () => {
       "   this   is    it       ".removeExtraWhiteSpace()
     );
   });
+
+  it("should kabob case the characters", () => {
+    assert.equal("yes-sir", "   yes sir    ".kabobCase());
+
+    assert.equal(
+      "another-test-for-this",
+      "    another test    for this".kabobCase()
+    );
+    assert.equal(
+      "isnt-this-the-same-thing?",
+      " isnt    this    the    same    thing?".kabobCase()
+    );
+  });
 });
