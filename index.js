@@ -140,4 +140,5 @@ String.prototype.camelCase = function() {
       outputWord.push(currChar);
     }
   }
+  return outputWord.join("");
 };

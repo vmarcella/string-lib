@@ -96,4 +96,13 @@ describe("Extending the String type functionality", () => {
     );
     assert.equal("what_is_up_tim?", "    what     is   up   tim?".snakeCase());
   });
+
+  it("should camel case the characters", () => {
+    assert.equal("yesSir", "yes      sir       ".camelCase());
+    assert.equal(
+      "thisShouldHaveOneHere",
+      "  this should have one here".camelCase()
+    );
+    assert.equal("whatIsUpTim?", "    what     is   up   tim?".camelCase());
+  });
 });
