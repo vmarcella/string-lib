@@ -1,6 +1,9 @@
 /**
  * Capitalize the first letter of the current string.
+ * @function
  * @returns {String} The capitalized version of the current string.
+ * @example
+ *  "this".capitalize() -> "This"
  */
 String.prototype.capitalize = function() {
   const firstChar = this[0].toUpperCase();
@@ -9,7 +12,10 @@ String.prototype.capitalize = function() {
 
 /**
  * Uppercase every character within the string.
+ * @function
  * @returns {String} The entire string all capitalized of the current string.
+ * @example
+ *  "this".allCaps() -> "THIS"
  */
 String.prototype.allCaps = function() {
   return this.toUpperCase();
@@ -19,6 +25,8 @@ String.prototype.allCaps = function() {
  * Uppercase every word within the string
  * (Not including: the, in, a, an, and, but, for, at, by, from)
  * @returns {String} with every first character in every word capitalized of the current string.
+ * @example
+ *  "this word".capitalizeWords() -> "This Word"
  */
 String.prototype.capitalizeWords = function() {
   const exclusionWords = [
@@ -51,7 +59,10 @@ String.prototype.capitalizeWords = function() {
 
 /**
  * Uppercase every other odd character not including white space.
+ * @function
  * @returns {String} of every odd character capitalized of the current string.
+ * @example
+ *  "this".oddCaps() -> "tHiS"
  */
 String.prototype.oddCaps = function() {
   let counter = 0;
@@ -71,7 +82,10 @@ String.prototype.oddCaps = function() {
 
 /**
  * Uppercase every even character not including white space.
+ * @function
  * @returns {String} of every even character capitalized of the current string.
+ * @example
+ *  "this".evenCaps() -> "ThIs"
  */
 String.prototype.evenCaps = function() {
   let counter = 0;
@@ -91,7 +105,10 @@ String.prototype.evenCaps = function() {
 
 /**
  * Remove any extra whitespace throughout the string.
+ * @function
  * @returns {String} with all the extra white space removed.
+ * @example
+ *  "   this  word    ".removeExtraWhiteSpace() -> "this word"
  */
 String.prototype.removeExtraWhiteSpace = function() {
   // Regex pattern that searches for any global occurence of
@@ -103,7 +120,10 @@ String.prototype.removeExtraWhiteSpace = function() {
 
 /**
  * Kabob case the current string if it has spaces.
+ * @function
  * @returns {String} that is a kabob cased version of the current string
+ * @example
+ *  "kabob this!".kabobCase() -> "kabob-this!"
  */
 String.prototype.kabobCase = function() {
   const trimmedStr = this.removeExtraWhiteSpace();
@@ -113,8 +133,12 @@ String.prototype.kabobCase = function() {
 };
 
 /**
+ *
  * Snake case the current string if it has spaces.
+ * @function
  * @returns {String} that is a snake cased version of the current string
+ * @example
+ *  "snake case this!".snakeCase() -> "snake_case_this!"
  */
 String.prototype.snakeCase = function() {
   const trimmedStr = this.removeExtraWhiteSpace();
@@ -125,7 +149,10 @@ String.prototype.snakeCase = function() {
 
 /**
  * Convert the current string to camel case if it has spaces.
+ * @function
  * @returns {String} that is a camel cased version of the current string
+ * @example
+ *  "camel case these words!".camelCase() -> "camelCaseTheseWords"
  */
 String.prototype.camelCase = function() {
   const trimmedStr = this.removeExtraWhiteSpace();
