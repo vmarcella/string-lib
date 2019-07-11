@@ -139,29 +139,3 @@ String.prototype.camelCase = function() {
     }
   }
 };
-
-String.prototype.uppercaseEveryOther = function() {
-  outputList = [];
-  for (let i = 0; i < this.length; i += 1) {
-    outputList.push(i % 2 == 0 ? this[i].toUpperCase() : this[i]);
-  }
-
-  return outputList.join("");
-};
-
-String.prototype.removeWhiteSpace = function() {
-  outputList = [];
-  for (let i = 0; i < this.length; i += 1) {
-    if (this[i] !== " ") {
-      outputList.push(this[i]);
-    }
-  }
-
-  return outputList.join("");
-};
-
-console.log("yeet".uppercaseFirst());
-console.log("yeet yeet yeet".uppercaseAll());
-console.log("yeetyeetyeet".uppercaseEveryOther());
-console.log("yeet yeet yeet".removeWhiteSpace());
-console.log("y   e   e   t".removeExtraWhiteSpace());
