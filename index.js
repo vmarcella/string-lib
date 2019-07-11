@@ -47,7 +47,6 @@ String.prototype.capitalizeWords = function() {
   // Iterate through our words, check if they're an exclusion word,
   // and then capitalzie them if they're not.
   for (word of this.split(" ")) {
-    console.log(word);
     if (!exclusionWords.includes(word)) {
       word = word.capitalize();
     }

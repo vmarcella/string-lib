@@ -1,6 +1,7 @@
 # String library extension
 ![GitHub repo size](https://img.shields.io/github/repo-size/C3NZ/string-lib.svg?style=plastic)
 ![npm](https://img.shields.io/npm/v/@cenz/string-lib.svg?style=plastic)
+![Travis (.org)](https://img.shields.io/travis/C3NZ/string-lib.svg)
 
 This project is a lightweight library that extends 
 the functionality of javascripts built in `String` type with some functions that
