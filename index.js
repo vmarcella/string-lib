@@ -113,7 +113,7 @@ String.prototype.snakeCase = function() {
    */
   const trimmedStr = this.removeExtraWhiteSpace();
   const pattern = /\s/g;
-  const newStr = this.replace(trimmedStr, "_");
+  const newStr = trimmedStr.replace(pattern, "_");
   return newStr;
 };
 

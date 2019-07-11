@@ -87,4 +87,13 @@ describe("Extending the String type functionality", () => {
       " isnt    this    the    same    thing?".kabobCase()
     );
   });
+
+  it("should snake case the characters", () => {
+    assert.equal("yes_sir", "yes      sir       ".snakeCase());
+    assert.equal(
+      "thisshouldhaveone_here",
+      "  thisshouldhaveone here".snakeCase()
+    );
+    assert.equal("what_is_up_tim?", "    what     is   up   tim?".snakeCase());
+  });
 });
