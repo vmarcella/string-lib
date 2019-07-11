@@ -57,7 +57,6 @@ String.prototype.oddCaps = function() {
   for (char of this.split("")) {
     if (char !== " ") {
       char = counter % 2 === 0 ? char : char.toUpperCase();
-      console.log(char);
       counter += 1;
     }
     outputWord.push(char);
