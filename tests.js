@@ -55,4 +55,23 @@ describe("Extending the String type functionality", () => {
       "h     e   l     l         o".evenCaps()
     );
   });
+
+  it("should remove all extra white spaces", () => {
+    assert.equal(
+      "h e l l o",
+      "    h e     l    l    o".removeExtraWhiteSpace()
+    );
+    assert.equal(
+      "e e",
+      "    e                  e       ".removeExtraWhiteSpace()
+    );
+    assert.equal(
+      "he ll no",
+      "he          ll           no        ".removeExtraWhiteSpace()
+    );
+    assert.equal(
+      "this is it",
+      "   this   is    it       ".removeExtraWhiteSpace()
+    );
+  });
 });
