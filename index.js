@@ -13,12 +13,12 @@ String.prototype.allCaps = function() {
   return this.toUpperCase();
 };
 
-String.prototype.captializeWords = function() {
+String.prototype.capitalizeWords = function() {
   /*
    * Uppercase every word within the string
    * (Not including: the, in, a, an, and, but, for, at, by, from)
    */
-  exclusion_words = [
+  const exclusionWords = [
     "the",
     "in",
     "a",
@@ -31,18 +31,19 @@ String.prototype.captializeWords = function() {
     "from"
   ];
 
-  capitalized_word = [];
+  const capitalizedWords = [];
 
   // Iterate through our words, check if they're an exclusion word,
   // and then capitalzie them if they're not.
   for (word of this.split(" ")) {
-    if (!exclusion_words.includes(word)) {
+    console.log(word);
+    if (!exclusionWords.includes(word)) {
       word = word.capitalize();
     }
-    captializeWords.push(word.toUpperCase());
+    capitalizedWords.push(word);
   }
 
-  return captializedWords.join("");
+  return capitalizedWords.join(" ");
 };
 
 String.prototype.oddCaps = function() {
