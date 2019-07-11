@@ -39,4 +39,11 @@ describe("Extending the String type functionality", () => {
     );
     assert.equal("Last but Not Butt", "last but not butt".capitalizeWords());
   });
+
+  it("should capitalize every odd character", () => {
+    assert.equal("aBc  D e F", "abc  d e f".oddCaps());
+    assert.equal("aBcDeFgHjK", "abcdefghjk".oddCaps());
+    assert.equal("aStRoWoRl      D", "astroworl      d".oddCaps());
+    assert.equal("wOoOoOoSh", "woooooosh".oddCaps());
+  });
 });

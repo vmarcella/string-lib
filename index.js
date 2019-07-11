@@ -51,18 +51,19 @@ String.prototype.oddCaps = function() {
    * Uppercase every other odd character not including white space.
    */
   let counter = 0;
-  output_word = [];
+  outputWord = [];
 
   // Iterate through every character capitalize every odd one.
-  for (char of this.split()) {
+  for (char of this.split("")) {
     if (char !== " ") {
-      char = counter % 2 == 0 ? char : char.toUpperCase();
+      char = counter % 2 === 0 ? char : char.toUpperCase();
+      console.log(char);
       counter += 1;
     }
-    output_word.push(char);
+    outputWord.push(char);
   }
 
-  return output_word.join("");
+  return outputWord.join("");
 };
 
 String.prototype.evenCaps = function() {
