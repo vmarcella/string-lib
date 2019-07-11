@@ -1,5 +1,7 @@
 # String library extension
-This project is a library that extends the functionality of javascripts built in `String` type.
+This project is a lightweight library that extends 
+the functionality of javascripts built in `String` type with some functions that
+may come in handy.
 
 ## Getting started
 To get started, simply go into your project folder and run:

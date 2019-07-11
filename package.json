@@ -1,0 +1,19 @@
+{
+  "name": "string-lib",
+  "version": "1.0.0",
+  "description": "A lightweight library that adds more functionality to Javascript's built in type, String",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C3NZ/string-lib.git"
+  },
+  "author": "C3NZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/C3NZ/string-lib/issues"
+  },
+  "homepage": "https://github.com/C3NZ/string-lib#readme"
+}
