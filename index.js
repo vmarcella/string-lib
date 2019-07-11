@@ -1,23 +1,26 @@
+/**
+ * Capitalize the first letter of the current string.
+ * @returns {String} The capitalized version of the current string.
+ */
 String.prototype.capitalize = function() {
-  /*
-   * Capitalize the first letter of the current string.
-   */
   const firstChar = this[0].toUpperCase();
   return firstChar + this.slice(1, this.length);
 };
 
+/**
+ * Uppercase every character within the string.
+ * @returns {String} The entire string all capitalized of the current string.
+ */
 String.prototype.allCaps = function() {
-  /*
-   * Uppercase every character within the string.
-   */
   return this.toUpperCase();
 };
 
+/**
+ * Uppercase every word within the string
+ * (Not including: the, in, a, an, and, but, for, at, by, from)
+ * @returns {String} with every first character in every word capitalized of the current string.
+ */
 String.prototype.capitalizeWords = function() {
-  /*
-   * Uppercase every word within the string
-   * (Not including: the, in, a, an, and, but, for, at, by, from)
-   */
   const exclusionWords = [
     "the",
     "in",
@@ -46,10 +49,11 @@ String.prototype.capitalizeWords = function() {
   return capitalizedWords.join(" ");
 };
 
+/**
+ * Uppercase every other odd character not including white space.
+ * @returns {String} of every odd character capitalized of the current string.
+ */
 String.prototype.oddCaps = function() {
-  /*
-   * Uppercase every other odd character not including white space.
-   */
   let counter = 0;
   outputWord = [];
 
@@ -65,10 +69,11 @@ String.prototype.oddCaps = function() {
   return outputWord.join("");
 };
 
+/**
+ * Uppercase every even character not including white space.
+ * @returns {String} of every even character capitalized of the current string.
+ */
 String.prototype.evenCaps = function() {
-  /*
-   * Uppercase every even character not including white space.
-   */
   let counter = 0;
   outputWord = [];
 
@@ -84,11 +89,11 @@ String.prototype.evenCaps = function() {
   return outputWord.join("");
 };
 
+/**
+ * Remove any extra whitespace throughout the string.
+ * @returns {String} with all the extra white space removed.
+ */
 String.prototype.removeExtraWhiteSpace = function() {
-  /*
-   * Remove any extra whitespace throughout the string.
-   */
-
   // Regex pattern that searches for any global occurence of
   // continuations of two or more spaces.
   const pattern = /[ ]{2,}/g;
@@ -96,30 +101,33 @@ String.prototype.removeExtraWhiteSpace = function() {
   return newStr.trim();
 };
 
+/**
+ * Kabob case the current string if it has spaces.
+ * @returns {String} that is a kabob cased version of the current string
+ */
 String.prototype.kabobCase = function() {
-  /*
-   * Kabob case the current string if it has spaces.
-   */
   const trimmedStr = this.removeExtraWhiteSpace();
   const pattern = /\s/g;
   const newStr = trimmedStr.replace(pattern, "-");
   return newStr;
 };
 
+/**
+ * Snake case the current string if it has spaces.
+ * @returns {String} that is a snake cased version of the current string
+ */
 String.prototype.snakeCase = function() {
-  /*
-   * Snake case the current string if it has spaces.
-   */
   const trimmedStr = this.removeExtraWhiteSpace();
   const pattern = /\s/g;
   const newStr = trimmedStr.replace(pattern, "_");
   return newStr;
 };
 
+/**
+ * Convert the current string to camel case if it has spaces.
+ * @returns {String} that is a camel cased version of the current string
+ */
 String.prototype.camelCase = function() {
-  /*
-   * Convert the current string to camel case if it has spaces.
-   */
   const trimmedStr = this.removeExtraWhiteSpace();
   const outputWord = [];
 
