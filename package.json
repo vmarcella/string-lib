@@ -1,5 +1,5 @@
 {
-  "name": "string-lib",
+  "name": "@cenz/string-lib",
   "version": "1.0.0",
   "description": "A lightweight library that adds more functionality to Javascript's built in type, String",
   "main": "index.js",

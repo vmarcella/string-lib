@@ -6,13 +6,13 @@ may come in handy.
 ## Getting started
 To get started, simply go into your project folder and run:
 ```
-npm install @C3NZ/string-lib --save
+npm install @cenz/string-lib --save
 ```
 
 This will install the string library into your application. To get access to the extended
 functionallity that is provided by this library, add this to your `index.js` or whatever you're
 using as your applications main point of entry:
 ```
-require('@C3NZ/string-lib')
+require('@cenz/string-lib')
 ```
 
