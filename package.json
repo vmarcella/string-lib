@@ -4,7 +4,7 @@
   "description": "A lightweight library that adds more functionality to Javascript's built in type, String",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests.js"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
