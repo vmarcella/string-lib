@@ -4,7 +4,8 @@
   "description": "A lightweight library that adds more functionality to Javascript's built in type, String",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "rollup": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/C3NZ/string-lib#readme",
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "rollup": "^1.17.0"
   }
 }
