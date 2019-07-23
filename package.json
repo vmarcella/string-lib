@@ -6,8 +6,7 @@
   "module": "esm/index.js",
   "files": ["esm/*", "umd/*"],
   "scripts": {
-    "test": "npm run rollup && mocha test.js",
-    "rollup": "rollup --config",
+    "test": "npm run prepare && mocha test.js",
     "prepare": "rollup --config"
   },
   "repository": {
