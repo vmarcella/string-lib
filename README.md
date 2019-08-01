@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/npm/v/@cenz/string-lib.svg?style=plastic)
 ![Travis (.org)](https://img.shields.io/travis/C3NZ/string-lib.svg?style=plastic)
 ![Codecov](https://img.shields.io/codecov/c/gh/C3NZ/string-lib.svg?style=plastic)
-
+![npm](https://img.shields.io/npm/dy/@cenz/string-lib?style=plastic)
 This project is a lightweight library that extends 
 the functionality of javascripts built in `String` type with some functions that
 may come in handy.
